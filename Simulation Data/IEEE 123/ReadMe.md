@@ -8,6 +8,6 @@ The data file label is named after the following rules:<br>
 
 *ADJ1 is 250 feet awy from the feeder.<br>
 
-The measured variables in each data file include: Feeder-head voltage / Feeder-head current / RMS current at selected three PV buses under the corresponding scenario.
+The measured variables in each data file include: Feeder-head voltage / Feeder-head current / RMS current at three selected PV buses under the corresponding scenario.
 
 ![image](https://user-images.githubusercontent.com/113486786/205101071-91c863a6-51fc-4c40-a5e6-274aad9b0a14.png)
