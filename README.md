@@ -1,1 +1,2 @@
-# Transient-Data-for-OEDI
+# Transient Data for OEDI
+This repositort contains an open-source library of transient events in distributed system with high solar PV. The library includes the collected data, related documents and scripts for loading the data. The data library is built for transient event detection and machine learning based analysis algorithm development. The data was collected via both field test and software simulation. The units for the data are included in the data file headers for each data series. A text editor or spreadsheet software such as Excel and Matlab is required to view the data.
