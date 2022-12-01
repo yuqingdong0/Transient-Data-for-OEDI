@@ -5,4 +5,9 @@ The data is simulated through IEEE 13 bus system with 1 PV in ATP-EMTP software.
 * Fault Location: ADJ1/634_bat1/xf1 --> b1/b2/b3<br>
 * Fault Type: Three-phase/Single-phase/Line-to-line phase fault --> f1/f2/f3<br>
 
-*ADJ1 is 250 feet awy from the feeder.
+*ADJ1 is 250 feet awy from the feeder.<br>
+
+The measured variables in each data file include: Feeder-head voltage / Feeder-head current / RMS voltage at the PV bus / RMS current at the PV bus / angle speed at the PV bus under the corresponding scenario.<br>
+
+
+![image](https://user-images.githubusercontent.com/113486786/205100327-bf760968-2ea3-4d1a-a98d-8b5e865bf8f9.png)
