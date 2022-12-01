@@ -1,5 +1,6 @@
 # IEEE 123 Test Model
-The data is simulated through IEEE 123 bus system with 14 PVs in ATP-EMTP software. The data format is in COMTRADE file. The fault is applied at 0.3s and never cleared. The time window is from 0.28s to 0.34s.<br>
+The data is simulated through IEEE 123 bus system with 14 PVs in ATP-EMTP software. The data format is in COMTRADE file（.cfg and .dat). The fault is applied at 0.3s and never cleared. The time window is from 0.28s to 0.34s.<br>
+The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/1.0 --> l1/l2<br>
 * PV Capacity: 0.4/0.6/0.8/1.0 --> c1/c2/c3/c4<br>
 * Fault Location: ADJ1/197/450/82 --> b1/b2/b3/b4<br>
