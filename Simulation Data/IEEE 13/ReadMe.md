@@ -39,32 +39,20 @@ for i in range(rec.channels_count):
 ### Results
 The measured variables under the corresponding scenario in each data file are shown in the table below. 
 
-| Variable | Description |
-| --- | --- |
-| SBUS A | Feederhead instantaneous voltage in phase A |
-| SBUS B| Feederhead instantaneous voltage in phase B |
-| SBUS C| Feederhead instantaneous voltage in phase C |
-| SBUS A 22 A I-branch| Bus 22 instantaneous voltage in phase A |
-| SBUS B 22 B I-branch| Bus 22 instantaneous voltage in phase B |
-| SBUS C 22 C I-branch| Bus 22 instantaneous voltage in phase C |
-| FAULTA I-branch| Fault current in phase A |
-| FAULTB I-branch| Fault current in phase B |
-| FAULTC I-branch| Fault current in phase C |
-| TACS PV001V I-branch| RMS voltage at PV1 |
-| TACS PV001I I-branch| RMS current at PV1 |
-| TACS PV001W I-branch| Angle speed at PV1 |
-| TACS PV002V I-branch| RMS voltage at PV2 |
-| TACS PV002I I-branch| RMS current at PV2 |
-| TACS PV002W I-branch| Show file differences that haven't been staged |
-| TACS ST001V I-branch| Show file differences that haven't been staged |
-| TACS ST001I I-branch| Show file differences that haven't been staged |
-| TACS ST001W I-branch| Show file differences that haven't been staged |
-| TACS ST002V I-branch| Show file differences that haven't been staged |
-| TACS ST002I I-branch| Show file differences that haven't been staged |
-| TACS ST002W I-branch| Show file differences that haven't been staged |
-| TACS ST003V I-branch| Show file differences that haven't been staged |
-| TACS ST003I I-branch| Show file differences that haven't been staged |
-| TACS ST003W I-branch| Show file differences that haven't been staged |
+| Variable | Description | Variable | Description |
+| --- | --- | --- | --- |
+| *SBUS A* | Feederhead instantaneous voltage in phase A | *TACS PV001V I-branch* | RMS voltage at PV1 |
+| *SBUS B* | Feederhead instantaneous voltage in phase B | *TACS PV001I I-branch* | RMS current at PV1 |
+| *SBUS C* | Feederhead instantaneous voltage in phase C | *TACS PV001W I-branch* | Angle speed at PV1 |
+| *SBUS A 22 A I-branch*| Bus 22 instantaneous voltage in phase A | *TACS PV002V I-branch* | RMS voltage at PV2 |
+| *SBUS B 22 B I-branch* | Bus 22 instantaneous voltage in phase B | *TACS PV002I I-branch* | RMS current at PV2 |
+| *SBUS C 22 C I-branch* | Bus 22 instantaneous voltage in phase C | *TACS PV002W I-branch* | Angle speed at PV2 |
+| *FAULTA I-branch* | Fault current in phase A | *TACS ST001V I-branch* | RMS voltage at ST1 |
+| *FAULTB I-branch* | Fault current in phase B | *TACS ST001I I-branch* | RMS current at ST1 |
+| *FAULTC I-branch* | Fault current in phase C | *TACS ST001W I-branch* | Angle speed at ST1 |
+| *TACS ST002V I-branch* | RMS voltage at ST2 | *TACS ST003V I-branch* | RMS voltage at ST3 |
+| *TACS ST002I I-branch* | RMS current at ST2 | *TACS ST003I I-branch* | RMS current at ST3 |
+| *TACS ST002W I-branch* | Angle speed at ST2 | *TACS ST003W I-branch* | Angle speed at ST3 |
 
 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s.<br>
