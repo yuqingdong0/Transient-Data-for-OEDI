@@ -2,10 +2,10 @@
 ## Contents
 The data is simulated through IEEE 13 bus system with 2 PVs and 3 Battery Storages in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in COMTRADE file.<br>
 The data file label is named after the following rules:<br>
-* Loading Condition: 0.4/0.7/1.0 --> l1/l2/l3<br>
-* PV Capacity: 0.2/1.0 --> c1/c2<br>
-* Fault Location: ADJ1/634_bat1/xf1 --> b1/b2/b3<br>
-* Fault Type: Three-phase/Single-phase/Line-to-line phase fault --> f1/f2/f3<br>
+* Loading Condition: 0.4/0.7/1.0 ➡️ l1/l2/l3<br>
+* PV Capacity: 0.2/1.0 ➡️ c1/c2<br>
+* Fault Location: ADJ1/634_bat1/xf1 ➡️ b1/b2/b3<br>
+* Fault Type: Three-phase/Single-phase/Line-to-line phase fault ➡️ f1/f2/f3<br>
 
 *_ADJ1 is 250 feet away from the feeder_.<br>
 
@@ -55,7 +55,7 @@ The measured variables under the corresponding scenario in each data file are sh
 | TACS ST002W I-branch | *Angle speed at ST2* | TACS ST003W I-branch | *Angle speed at ST3* |
 
 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUB A/B/C** are shown below.
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUB A/B/C** are shown below.<br>
 ![file_name_1](https://user-images.githubusercontent.com/113486786/205723319-c76e8ecc-ee7c-44fd-981e-7211c38f63d4.png)
 ![file_name_2](https://user-images.githubusercontent.com/113486786/205723329-df133944-33df-404c-8e9b-4c7bc3ce1bd1.png)
 ![file_name_3](https://user-images.githubusercontent.com/113486786/205723340-6f88c022-e19e-40be-9b6c-9de2e432cc1c.png)
