@@ -55,8 +55,9 @@ The measured variables under the corresponding scenario in each data file are sh
 | TACS ST002W I-branch | *Angle speed at ST2* | TACS ST003W I-branch | *Angle speed at ST3* |
 
 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of SBUB A/B/C are shown below.
-![file_name_0](https://user-images.githubusercontent.com/113486786/205716638-53733fb5-b868-4f08-aaf2-dcd21dd4b74f.png)
-![file_name_1](https://user-images.githubusercontent.com/113486786/205716670-f4ecc46e-9533-4a1f-8c75-819a0eb913f6.png)
-![file_name_2](https://user-images.githubusercontent.com/113486786/205716696-b50dbbe1-e722-49d2-b539-9a9d8e9abaf6.png)
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUB A/B/C** are shown below.
+![file_name_1](https://user-images.githubusercontent.com/113486786/205719016-05591351-9cba-4c50-abf4-8d8f6fe329ea.png)
+![file_name_2](https://user-images.githubusercontent.com/113486786/205719056-8fda3371-8d1f-4363-9012-41238b17dd98.png)
+![file_name_3](https://user-images.githubusercontent.com/113486786/205719084-3a9e7e98-e6d6-4a8a-bd5f-dfdd7fa38e5c.png)
+
 
