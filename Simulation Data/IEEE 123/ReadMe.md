@@ -24,7 +24,7 @@ The example below shows how to open CFG and DAT files to plot (using `pyplot`) a
 import matplotlib.pyplot as plt
 from comtrade import Comtrade
 
-file_name = "ieee13_pv_l1c1b1f1"
+file_name = "ieee123_pv_l1c1b1f1"
 rec = Comtrade()
 rec.load(f"{file_name}.cfg", f"{file_name}.dat")
 print("Trigger time = {}s".format(rec.trigger_time))
