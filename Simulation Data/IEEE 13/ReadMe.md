@@ -1,6 +1,6 @@
 # IEEE 13 Test Model
 ## Contents
-The data is simulated through IEEE 13 bus system with 1 PV in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in COMTRADE file.<br>
+The data is simulated through IEEE 13 bus system with 2 PVs in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in COMTRADE file.<br>
 The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/0.7/1.0 --> l1/l2/l3<br>
 * PV Capacity: 0.2/1.0 --> c1/c2<br>
@@ -18,7 +18,8 @@ pip install comtrade
 ```
 
 ### Plot
-The examples below shows how to open both CFG and DAT files or the new CFF file to plot (using pyplot) analog channel oscillography.
+The example below shows how to open CFG and DAT files to plot (using `pyplot`) analog channel oscillography. The **file_name** can be modified according to the file desired.
+
 ```python
 import matplotlib.pyplot as plt
 from comtrade import Comtrade
@@ -35,7 +36,37 @@ for i in range(rec.channels_count):
 ```
 
 
-## Results
-The measured variables in each data file include: Feeder-head voltage/Feeder-head current/RMS voltage at the PV bus/RMS current at the PV bus/angle speed at the PV bus under the corresponding scenario. The fault is applied at 0.3s and never cleared. The time window is from 0.28s to 0.34s.<br>
+### Results
+The measured variables under the corresponding scenario in each data file are shown in the table below. 
+
+| Variable | Description |
+| --- | --- |
+| SBUS A | Feederhead instantaneous voltage in phase A |
+| SBUS B| Feederhead instantaneous voltage in phase B |
+| SBUS C| Feederhead instantaneous voltage in phase C |
+| SBUS A 22 A I-branch| Bus 22 instantaneous voltage in phase A |
+| SBUS B 22 B I-branch| Bus 22 instantaneous voltage in phase B |
+| SBUS C 22 C I-branch| Bus 22 instantaneous voltage in phase C |
+| FAULTA I-branch| Fault current in phase A |
+| FAULTB I-branch| Fault current in phase B |
+| FAULTC I-branch| Fault current in phase C |
+| TACS PV001V I-branch| RMS voltage at PV1 |
+| TACS PV001I I-branch| RMS current at PV1 |
+| TACS PV001W I-branch| Angle speed at PV1 |
+| TACS PV002V I-branch| RMS voltage at PV2 |
+| TACS PV002I I-branch| RMS current at PV2 |
+| TACS PV002W I-branch| Show file differences that haven't been staged |
+| TACS ST001V I-branch| Show file differences that haven't been staged |
+| TACS ST001I I-branch| Show file differences that haven't been staged |
+| TACS ST001W I-branch| Show file differences that haven't been staged |
+| TACS ST002V I-branch| Show file differences that haven't been staged |
+| TACS ST002I I-branch| Show file differences that haven't been staged |
+| TACS ST002W I-branch| Show file differences that haven't been staged |
+| TACS ST003V I-branch| Show file differences that haven't been staged |
+| TACS ST003I I-branch| Show file differences that haven't been staged |
+| TACS ST003W I-branch| Show file differences that haven't been staged |
+
+
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s.<br>
 
 ![image](https://user-images.githubusercontent.com/113486786/205100327-bf760968-2ea3-4d1a-a98d-8b5e865bf8f9.png)
