@@ -7,7 +7,7 @@ The data file label is named after the following rules:<br>
 * Fault Location: ADJ1/634_bat1/xf1 --> b1/b2/b3<br>
 * Fault Type: Three-phase/Single-phase/Line-to-line phase fault --> f1/f2/f3<br>
 
-*_ADJ1 is 250 feet awy from the feeder_.<br>
+*_ADJ1 is 250 feet away from the feeder_.<br>
 
 ## How to Use
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (COMTRADE) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
