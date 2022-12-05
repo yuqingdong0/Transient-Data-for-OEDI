@@ -10,7 +10,7 @@ The data file label is named after the following rules:<br>
 *_ADJ1 is 250 feet awy from the feeder_.<br>
 
 ## How to Use
-**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (COMTRADE) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade).
+**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (COMTRADE) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
 ### Installation
 
 ```python
@@ -56,8 +56,8 @@ The measured variables under the corresponding scenario in each data file are sh
 
 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUB A/B/C** are shown below.
-![file_name_1](https://user-images.githubusercontent.com/113486786/205719016-05591351-9cba-4c50-abf4-8d8f6fe329ea.png)
-![file_name_2](https://user-images.githubusercontent.com/113486786/205719056-8fda3371-8d1f-4363-9012-41238b17dd98.png)
-![file_name_3](https://user-images.githubusercontent.com/113486786/205719084-3a9e7e98-e6d6-4a8a-bd5f-dfdd7fa38e5c.png)
+![file_name_1](https://user-images.githubusercontent.com/113486786/205723319-c76e8ecc-ee7c-44fd-981e-7211c38f63d4.png)
+![file_name_2](https://user-images.githubusercontent.com/113486786/205723329-df133944-33df-404c-8e9b-4c7bc3ce1bd1.png)
+![file_name_3](https://user-images.githubusercontent.com/113486786/205723340-6f88c022-e19e-40be-9b6c-9de2e432cc1c.png)
 
 
