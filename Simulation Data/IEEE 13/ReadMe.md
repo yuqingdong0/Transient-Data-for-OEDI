@@ -1,6 +1,6 @@
 # IEEE 13 Test Model
 ## Contents
-The data is simulated through IEEE 13 bus system with 2 PVs and 3 Battery Storages (ST) in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in COMTRADE file.<br>
+The data is simulated through IEEE 13 bus system with 2 PVs and 3 Battery Storages (ST) in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE** file.<br>
 The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/0.7/1.0 ➡️ l1/l2/l3<br>
 * PV Capacity: 0.2/1.0 ➡️ c1/c2<br>
@@ -9,8 +9,8 @@ The data file label is named after the following rules:<br>
 
 *_ADJ1 is 250 feet away from the feeder_.<br>
 
-## How to Use
-**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (COMTRADE) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
+## For COMTRADE files only
+**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
 ### Installation
 
 ```python
@@ -36,7 +36,7 @@ for i in range(rec.channels_count):
 ```
 
 
-### Results
+## Results
 The measured variables under the corresponding scenario in each data file are shown in the table below. 
 
 | Variable | Description | Variable | Description |
