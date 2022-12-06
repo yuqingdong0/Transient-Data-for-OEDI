@@ -1,6 +1,6 @@
 # IEEE 13 Test Model
 ## Contents
-The data is simulated through IEEE 13 bus system with 2 PVs and 3 Battery Storages (ST) in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE** file.<br>
+The data is simulated through IEEE 13 bus system with 2 PVs and 3 Battery Storages (ST) in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE13_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE13_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE**（.cfg and .dat) file.<br>
 The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/0.7/1.0 ➡️ l1/l2/l3<br>
 * PV Capacity: 0.2/1.0 ➡️ c1/c2<br>
