@@ -43,16 +43,16 @@ There are 24 measured variables under the corresponding scenario in each data fi
 | :---: | :---: | :---: | :---: |
 | SBUS A V-node | *Feederhead bus voltage in phase A* | TACS PV002V I-branch | *RMS voltage at PV2* |
 | SBUS B V-node | *Feederhead bus voltage in phase B* | TACS PV002I I-branch | *RMS current at PV2* |
-| SBUS C V-node | *Feederhead bus voltage in phase C* | TACS PV002W I-branch | *Frequency (rad/s) at PV2* |
+| SBUS C V-node | *Feederhead bus voltage in phase C* | TACS PV002W I-branch | *Frequency* (*rad/s*) *at PV2* |
 | SBUS A 22 A I-branch | *Feederhead current in phase A* | TACS ST001V I-branch | *RMS voltage at ST1* |
 | SBUS B 22 B I-branch | *Feederhead current in phase B* | TACS ST001I I-branch | *RMS current at ST1* |
-| SBUS C 22 C I-branch | *Feederhead current in phase C* | TACS ST001W I-branch | *Frequency (rad/s) at ST1* |
+| SBUS C 22 C I-branch | *Feederhead current in phase C* | TACS ST001W I-branch | *Frequency* (*rad/s*) *at ST1* |
 | FAULTA I-branch | *Fault current in phase A* | TACS ST002V I-branch | *RMS voltage at ST2* |
 | FAULTB I-branch | *Fault current in phase B* | TACS ST002I I-branch | *RMS current at ST2* |
-| FAULTC I-branch | *Fault current in phase C* | TACS ST002W I-branch | *Frequency (rad/s) at ST2* |
+| FAULTC I-branch | *Fault current in phase C* | TACS ST002W I-branch | *Frequency* (*rad/s*) *at ST2* |
 | TACS PV001V I-branch | *RMS voltage at PV1* | TACS ST003V I-branch | *RMS voltage at ST3* |
 | TACS PV001V I-branch | *RMS current at PV1* | TACS ST003I I-branch | *RMS current at ST3* |
-| TACS PV001V I-branch | *Frequency (rad/s) at PV1* | TACS ST003W I-branch | *Frequency (rad/s) at ST3* |
+| TACS PV001V I-branch | *Frequency* (*rad/s*) *at PV1* | TACS ST003W I-branch | *Frequency* (*rad/s*) *at ST3* |
 
 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C** are shown as examples. The units in *Y*-axis are *Volt* (*V*).<br>
