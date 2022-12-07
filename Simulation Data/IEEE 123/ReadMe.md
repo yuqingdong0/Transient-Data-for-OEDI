@@ -36,7 +36,7 @@ for i in range(rec.channels_count):
 ```
 
 ## Results
-There are 58 measured variables of each corresponding scenario in one data file.
+There are 58 measured variables under each corresponding scenario in one data file.
 * The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
 
 | Variable Name | Description | Variable Name | Description |
