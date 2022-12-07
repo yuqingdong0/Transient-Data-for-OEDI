@@ -1,13 +1,6 @@
 # IEEE 123 Test Model
 ## Contents
-The data is simulated through IEEE 123 bus system with 14 PVs in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE123_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE123_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE**（.cfg and .dat) file.<br>
-The data file label is named after the following rules:<br>
-* Loading Condition: 0.4/1.0 ➡️ l1/l2<br>
-* PV Capacity: 0.4/0.6/0.8/1.0 ➡️ c1/c2/c3/c4<br>
-* Fault Location: ADJ1/197/450/82 ➡️ b1/b2/b3/b4<br>
-* Fault Type: Three-phase/Single-phase/Line-to-line phase fault ➡️ f1/f2/f3<br>
-
-*_ADJ1 is 250 feet away from the feeder_.<br>
+The PMU data is converted from the Point On Wave (POW) data in IEEE 123 folder.
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
@@ -24,7 +17,7 @@ The example below shows how to open CFG and DAT files to plot (using `pyplot`) a
 import matplotlib.pyplot as plt
 from comtrade import Comtrade
 
-file_name = "ieee123_pv_l1c1b1f1"
+file_name = "IEEE123_PV_L1C1B1F1_pmu"
 rec = Comtrade()
 rec.load(f"{file_name}.cfg", f"{file_name}.dat")
 print("Trigger time = {}s".format(rec.trigger_time))
@@ -36,7 +29,7 @@ for i in range(rec.channels_count):
 ```
 
 ## Results
-There are 58 measured variables under each corresponding scenario in one data file.
+There are 122 measured variables in one data file.
 * The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
 
 | Variable Name | Description | Variable Name | Description |
@@ -58,6 +51,8 @@ There are 58 measured variables under each corresponding scenario in one data fi
 ### 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** are shown below as examples.
 
-![ieee123_pv_l1c1b1f14](https://user-images.githubusercontent.com/113486786/205838702-e1ed48c9-12df-47ed-a4f7-42fc1b681617.png)
-![ieee123_pv_l1c1b1f15](https://user-images.githubusercontent.com/113486786/205838721-df475388-3c5f-4ee6-ad7c-bcd782be61c1.png)
-![ieee123_pv_l1c1b1f16](https://user-images.githubusercontent.com/113486786/205838745-1361b8d2-f49a-441f-9c2f-3a56611481af.png)
+<div align=center><img src="https://user-images.githubusercontent.com/113486786/206096429-81d9650c-2006-4cca-a5cd-0614c56aa76f.png" width="400" height="200"/><div<div align=center><img src="https://user-images.githubusercontent.com/113486786/206096440-7f214fca-e46f-4f5a-a88b-e7d78b74749a.png" width="400" height="200"/></div>
+<div align=center><img src="https://user-images.githubusercontent.com/113486786/206098449-872a4d29-7141-4236-bf8d-e7d0bdd1246e.png" width="400" height="200"/><div<divalign=center><img src="https://user-images.githubusercontent.com/113486786/206098464-78d4dac8-e8c3-425c-a9af-45512799fa1f.png" width="400" height="200"/></div>
+<div align=center><img src="https://user-images.githubusercontent.com/113486786/206099086-8f903c36-f113-440f-8390-98289d3a4b93.png" width="400" height="200"/><div<divalign=center><img src="https://user-images.githubusercontent.com/113486786/206099134-04b2ec1b-1c45-4e3d-a82f-dcae7253350b.png" width="400" height="200"/></div>
+
+
