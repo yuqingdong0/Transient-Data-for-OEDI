@@ -1,6 +1,7 @@
 # IEEE 123 Test Model
 ## Contents
-The PMU data is converted from the Point On Wave (POW) data in [IEEE 123 folder](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file).
+The PMU data is converted from the Point On Wave (POW) data in [IEEE 123/COMTADE file](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file) folder.
+The PMU used in the demo is the IEEE standard P-Class PMU with a sampling rate of 960Hz, a nominal frequency of 60Hz, and a report rate of 60Hz.
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
@@ -49,7 +50,7 @@ There are 122 measured variables in one data file.
     * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
 
 ### 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** are shown below as examples.
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of the *Magnitude* and *Phase angle* of **SBUS A/B/C** are shown below as examples.
 
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/206096429-81d9650c-2006-4cca-a5cd-0614c56aa76f.png" width="400" height="200"/><div<div align=center><img src="https://user-images.githubusercontent.com/113486786/206096440-7f214fca-e46f-4f5a-a88b-e7d78b74749a.png" width="400" height="200"/></div>
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/206098449-872a4d29-7141-4236-bf8d-e7d0bdd1246e.png" width="400" height="200"/><div<divalign=center><img src="https://user-images.githubusercontent.com/113486786/206098464-78d4dac8-e8c3-425c-a9af-45512799fa1f.png" width="400" height="200"/></div>
