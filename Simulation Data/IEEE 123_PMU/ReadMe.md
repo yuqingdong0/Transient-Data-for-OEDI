@@ -33,27 +33,21 @@ for i in range(rec.channels_count):
 ## Results
 There are 122 measured variables in one data file.
 The order is stored as follows: 
-* Variables begin with **SBUS**
-    * _abs_(_Va_), _angle_(_Va_), _abs_(_Vb_), _angle_(_Vb_), _abs_(_Vc_), _angle_(_Vc_), _abs_(_Vp_), _angle_(_Vp_), _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ip_), _angle_(_Ip_), _Frequency_, _ROCOF_ of feederhead bus
-* Variables begin with **FAULT/FALT**
-    * _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ic_), _angle_(_Ic_)
-The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
-
-| Variable Name | Description | Variable Name | Description |
-| :---: | :---: | :---: | :---: |
-| SBUS A V-node | *Feederhead bus voltage in phase A* | SBUS C 25 C I-branch | *Feederhead current in phase C* |
-| SBUS B V-node | *Feederhead bus voltage in phase B* | FAULTA I-branch | *Fault current in phase A* | 
-| SBUS C V-node | *Feederhead bus voltage in phase C* | FAULTB I-branch | *Fault current in phase B* | 
-| SBUS A 25 A I-branch | *Feederhead current in phase A* | FAULTC I-branch | *Fault current in phase C* | 
-| SBUS B 25 B I-branch | *Feederhead current in phase B* | FALTBC 112 C I-branch | *Fault current in phase C of line to line fault* | 
-
-* The varibales begin with _TACS_ section delimiter are inverter outputs, following the rules:
+* Variables begin with ***SBUS***
+    * specify the variables on the feederhead bus
+    * _abs_(_Va_), _angle_(_Va_), _abs_(_Vb_), _angle_(_Vb_), _abs_(_Vc_), _angle_(_Vc_), _abs_(_Vp_), _angle_(_Vp_), _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ip_), _angle_(_Ip_), _Frequency_, _ROCOF_
+* Variables begin with ***FAULT/FALT***
+    * specify the fault currents
+    * _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_) for single-phase fault; _abs_(_Ic_), _angle_(_Ic_) for line-to-line fault
+* Variables begin with ***TACS*** 
+    * specify the inverter outputs
     * _PV###_ specifies the inverter number, from 1..999
-    * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase);helpful to visualize the operation of undervoltage trip or ridethrough.
-    * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase);sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltageor frequency trip function activated.
-    * suffix _W_ specifies the inverter's estimated frequency (rad/s); helpful to diagnose grid synchronization issues.
-    * suffixes _A_, _B_, _C_ specify the inverter's instantaneous phase voltages; needed to impute PMU data for this inverter.
-    * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
+    * suffixes _A_: _abs_(_Va_), _angle_(_Va_)
+    * suffixes _X_: _abs_(_Ia_), _angle_(_Ia_)
+    * suffixes _I_: _abs_(_Irms_), _angle_(_Irms_) for single-phase PVs; _abs_(_Ip_), _angle_(_Ip_) for three-phase PVs
+    * suffixes _V_: _abs_(_Vp_), _angle_(_Vp_)
+    * suffixes _W_: the inverter's estimated frequency (rad/s)
+
 
 ### 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of the *Magnitude* and *Phase angle* of **SBUS A/B/C** are shown below as examples.
