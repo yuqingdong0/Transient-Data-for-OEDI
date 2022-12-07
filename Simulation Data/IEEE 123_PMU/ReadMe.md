@@ -1,7 +1,8 @@
 # IEEE 123 Test Model
 ## Contents
-The PMU data is converted from the Point On Wave (POW) data in [IEEE 123/COMTADE file](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file) folder.
-The PMU used in the demo is the IEEE standard P-Class PMU with a sampling rate of 960Hz, a nominal frequency of 60Hz, and a report rate of 60Hz.
+The PMU data is converted from the Point On Wave (POW) data in [Transient-Data-for-OEDI/Simulation Data/IEEE 123/COMTADE file](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file) in this repository.
+The results are in **float32 formatted Comtrade** files (according to Annex H) and will contain magnitude and phase angle for each channel in the corresponding POW data file, as well as positive sequence phasors, frequency, and ROCOF estimates when a three phase signal is presented. The PMU used in the demo is the IEEE standard P-Class PMU with a sampling rate of 960Hz, a nominal frequency of 60Hz, and a report rate of 60Hz.<br>
+*_The CSV file format for PMU data is unavailable now._
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
@@ -31,7 +32,12 @@ for i in range(rec.channels_count):
 
 ## Results
 There are 122 measured variables in one data file.
-* The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
+The order is stored as follows: 
+* Variables begin with **SBUS**
+    * _abs_(_Va_), _angle_(_Va_), _abs_(_Vb_), _angle_(_Vb_), _abs_(_Vc_), _angle_(_Vc_), _abs_(_Vp_), _angle_(_Vp_), _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ip_), _angle_(_Ip_), _Frequency_, _ROCOF_ of feederhead bus
+* Variables begin with **FAULT/FALT**
+    * _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ic_), _angle_(_Ic_)
+The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
 
 | Variable Name | Description | Variable Name | Description |
 | :---: | :---: | :---: | :---: |
