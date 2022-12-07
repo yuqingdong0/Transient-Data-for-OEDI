@@ -1,6 +1,6 @@
 # IEEE 123 Test Model
 ## Contents
-The PMU data is converted from the Point On Wave (POW) data in IEEE 123 folder.
+The PMU data is converted from the Point On Wave (POW) data in [IEEE 123 folder](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file).
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
