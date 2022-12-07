@@ -40,12 +40,12 @@ There are 58 measured variables of each corresponding scenario in one data file.
 * The variables begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
 
 | Variable Name | Description | Variable Name | Description |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | SBUS A V-node | *Feederhead bus voltage in phase A* | SBUS C 25 C I-branch | *Feederhead current in phase C* |
-| SBUS B V-node | *Feederhead instantaneous voltage in phase B* | FAULTA I-branch | *Fault current in phase A* | 
-| SBUS C V-node | *Feederhead instantaneous voltage in phase C* | FAULTB I-branch | *Fault current in phase B* | 
+| SBUS B V-node | *Feederhead bus voltage in phase B* | FAULTA I-branch | *Fault current in phase A* | 
+| SBUS C V-node | *Feederhead bus voltage in phase C* | FAULTB I-branch | *Fault current in phase B* | 
 | SBUS A 25 A I-branch | *Feederhead current in phase A* | FAULTC I-branch | *Fault current in phase C* | 
-| SBUS B 25 B I-branch | *Feederhead current in phase B* | FALTBC 112 C I-branch | *Fault current in phase C of Phase to Phase fault* | 
+| SBUS B 25 B I-branch | *Feederhead current in phase B* | FALTBC 112 C I-branch | *Fault current in phase C of line to line fault* | 
 
 * The varibales begin with _TACS_ section delimiter are inverter outputs, following the rules:
     * _PV###_ specifies the inverter number, from 1..999
@@ -56,7 +56,7 @@ There are 58 measured variables of each corresponding scenario in one data file.
     * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
 
 ### 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of *SBUB A/B/C 25 A/B/C I-branch* are shown as examples.
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** are shown below as examples.
 
 ![ieee123_pv_l1c1b1f14](https://user-images.githubusercontent.com/113486786/205838702-e1ed48c9-12df-47ed-a4f7-42fc1b681617.png)
 ![ieee123_pv_l1c1b1f15](https://user-images.githubusercontent.com/113486786/205838721-df475388-3c5f-4ee6-ad7c-bcd782be61c1.png)
