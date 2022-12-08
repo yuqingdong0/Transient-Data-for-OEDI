@@ -49,8 +49,8 @@ There are 58 measured variables under each corresponding scenario in one data fi
 
 * The varibales begin with _TACS_ section delimiter are inverter outputs, following the rules:
     * _PV###_ specifies the inverter number, from 1..999
-    * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase);helpful to visualize the operation of undervoltage trip or ridethrough.
-    * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase);sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltageor frequency trip function activated.
+    * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase); helpful to visualize the operation of undervoltage trip or ridethrough.
+    * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase); sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltage or frequency trip function activated.
     * suffix _W_ specifies the inverter's estimated frequency (rad/s); helpful to diagnose grid synchronization issues.
     * suffixes _A_, _B_, _C_ specify the inverter's instantaneous phase voltages; needed to impute PMU data for this inverter.
     * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
