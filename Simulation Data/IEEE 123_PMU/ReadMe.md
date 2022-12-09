@@ -5,7 +5,7 @@ The results are in **float32 formatted Comtrade** files (according to Annex H) a
 *_The CSV file format for PMU data is unavailable now._
 
 ## For COMTRADE files only
-**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Deailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
+**Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Detailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
 ### Installation
 
 ```python
@@ -33,13 +33,13 @@ for i in range(rec.channels_count):
 ## Results
 There are 122 measured variables in one data file.
 The order is stored as follows: 
-* Variables begin with ***SBUS***
+* Variables which begin with ***SBUS***
     * specify the variables on the feederhead bus
     * _abs_(_Va_), _angle_(_Va_), _abs_(_Vb_), _angle_(_Vb_), _abs_(_Vc_), _angle_(_Vc_), _abs_(_Vp_), _angle_(_Vp_), _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_), _abs_(_Ip_), _angle_(_Ip_), _Frequency_, _ROCOF_
-* Variables begin with ***FAULT/FALT***
+* Variables which begin with ***FAULT/FALT***
     * specify the fault currents
     * _abs_(_Ia_), _angle_(_Ia_), _abs_(_Ib_), _angle_(_Ib_), _abs_(_Ic_), _angle_(_Ic_) for single-phase fault; _abs_(_Ic_), _angle_(_Ic_) for line-to-line fault
-* Variables begin with ***TACS*** 
+* Variables which begin with ***TACS*** 
     * specify the inverter outputs
     * _PV###_ specifies the inverter number, from 1..999
     * suffixes _A_: _abs_(_Va_), _angle_(_Va_)
