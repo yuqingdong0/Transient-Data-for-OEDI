@@ -1,6 +1,6 @@
-# IEEE LV_Network Model
+# IEEE LVN Model
 ## Contents
-The data is simulated through IEEE LV_Network system with 8 PVs in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE390_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE390_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE**（.cfg and .dat) file.<br>
+The data is simulated through IEEE Low Voltage Network (LVN) system with 8 PVs in ATP-EMTP software. The ATP model is converted from an open-source model [IEEE390_PV.xml](https://github.com/GRIDAPPSD/CIMHub/blob/feature/SETO/OEDI/xml/IEEE390_PV.xml) via [CIMHub](https://github.com/GRIDAPPSD/CIMHub/tree/feature/SETO). The data format is in **CSV** or **COMTRADE**（.cfg and .dat) file.<br>
 The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/0.7/1.0 ➡️ l1/l2/l3<br>
 * PV Capacity: 0.6/0.8/1.0 ➡️ c1/c2/c3<br>
