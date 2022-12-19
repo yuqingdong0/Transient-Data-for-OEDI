@@ -39,22 +39,16 @@ for i in range(rec.channels_count):
 
 
 ## Results
-There are 24 measured variables under the corresponding scenario in each data file, as shown in the table below. 
-
-| Variable Name | Description | Variable Name | Description |
-| :---: | :---: | :---: | :---: |
-| SBUS A V-node | *Feederhead bus voltage in phase A* | TACS PV002V I-branch | *RMS voltage at PV2* |
-| SBUS B V-node | *Feederhead bus voltage in phase B* | TACS PV002I I-branch | *RMS current at PV2* |
-| SBUS C V-node | *Feederhead bus voltage in phase C* | TACS PV002W I-branch | *Frequency* (*rad/s*) *at PV2* |
-| SBUS A 22 A I-branch | *Feederhead current in phase A* | TACS ST001V I-branch | *RMS voltage at ST1* |
-| SBUS B 22 B I-branch | *Feederhead current in phase B* | TACS ST001I I-branch | *RMS current at ST1* |
-| SBUS C 22 C I-branch | *Feederhead current in phase C* | TACS ST001W I-branch | *Frequency* (*rad/s*) *at ST1* |
-| FAULTA I-branch | *Fault current in phase A* | TACS ST002V I-branch | *RMS voltage at ST2* |
-| FAULTB I-branch | *Fault current in phase B* | TACS ST002I I-branch | *RMS current at ST2* |
-| FAULTC I-branch | *Fault current in phase C* | TACS ST002W I-branch | *Frequency* (*rad/s*) *at ST2* |
-| TACS PV001V I-branch | *RMS voltage at PV1* | TACS ST003V I-branch | *RMS voltage at ST3* |
-| TACS PV001V I-branch | *RMS current at PV1* | TACS ST003I I-branch | *RMS current at ST3* |
-| TACS PV001V I-branch | *Frequency* (*rad/s*) *at PV1* | TACS ST003W I-branch | *Frequency* (*rad/s*) *at ST3* |
+There are 21 measured variables under each corresponding scenario in one data file.
+* The variables which begin with _SBUS_ are system node voltages or branch currents, following the rules:
+  * suffix _V-node_ specifies the feederhead bus voltage in phase _A_/_B_/_C_
+  * suffix _I-branch_ specifies the feederhead current in phase _A_/_B_/_C_
+* The varibales which begin with _TACS_ section delimiter are inverter outputs, following the rules:
+    * _PV###_ specifies the PV number, from 1..999
+    * _ST###_ specifies the battery storage number, from 1..999
+    * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase); helpful to visualize the operation of undervoltage trip or ridethrough.
+    * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase); sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltage or frequency trip function activated.
+    * suffix _W_ specifies the inverter's estimated frequency (rad/s); helpful to diagnose grid synchronization issues.
 
 
 The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
