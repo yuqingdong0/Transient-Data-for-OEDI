@@ -57,4 +57,5 @@ The switching operation is applied at 0.3s and never cleared. The time window is
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/208351018-e2518327-f4e1-4f7b-b156-766edf37bf91.png" width="600" height="300">
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/208351052-82531ab6-5863-4e98-8d24-8cc6b0568004.png" width="600" height="300">
 
+ 
  Add single-phase operation results
