@@ -9,7 +9,7 @@ The data file label is named after the following rules:<br>
 * Single-phase (Phase A) Switching Operation: t2<br>
   * Breaker Name: sect1/sw_bat1/w_bat3 ➡️ b1/b2/b3 
 
-*_A table for breaker nodes._<br>
+*_A table for breaker nodes. demonstration of line trip/load change/phase_<br>
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Detailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
@@ -57,7 +57,7 @@ There are 24 measured variables under the corresponding scenario in each data fi
 | TACS PV001V I-branch | *Frequency* (*rad/s*) *at PV1* | TACS ST003W I-branch | *Frequency* (*rad/s*) *at ST3* |
 
 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C** in "ieee13_pv_l1c1b1f1" are shown as examples. The units in *Y*-axis are *Volt* (*V*).<br>
+The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
 
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/208350962-0aa314f6-1344-4563-929d-295a270ca72b.png" width="600" height="300">
 <div align=center><img src="https://user-images.githubusercontent.com/113486786/208351018-e2518327-f4e1-4f7b-b156-766edf37bf91.png" width="600" height="300">
