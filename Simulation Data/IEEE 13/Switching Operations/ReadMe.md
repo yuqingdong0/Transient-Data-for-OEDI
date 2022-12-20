@@ -10,31 +10,53 @@ The data file label is named after the following rules:<br>
   * Breaker Name: sect1/sw_bat1/w_bat3 ➡️ b1/b2/b3 
 
 *_A table for breaker nodes. demonstration of line trip/load change/phase_<br>
-<table>
-    <thead>
-        <tr>
-            <th>Layer 1</th>
-            <th>Layer 2</th>
-            <th>Layer 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
-        </tr>
-        <tr>
-            <td>L3 Name B</td>
-        </tr>
-        <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
-        </tr>
-        <tr>
-            <td>L3 Name D</td>
-        </tr>
-    </tbody>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th style="width:18%"> Phase Type </th>
+      <th style="width:22%"> Switching Type </th>
+      <th style="width:20%"> Breaker Name </th>
+      <th style="width:30%"> Connecting Bus </th>
+    </tr>
+  </thead>
+  <tbody align="center">
+    <tr>
+      <td rowspan=5> Three Phase </td>
+      <td rowspan=2> Line Trip </td>
+      <td>brkr1</td>
+      <td>from 650 to brkr</td>
+    </tr>
+    <tr>
+      <td>fuse1</td>
+      <td>from 633 to xf1</td>
+    </tr>
+    <tr>
+      <td rowspan=3>Load Disconnection</td>
+      <td>671692</td>
+      <td>from 671 to 692</td>
+    </tr>
+    <tr>
+      <td>sw_bat1</td>
+      <td>from 634 to 634_bat1</td>
+    </tr>
+    <tr>
+      <td>sw_bat2</td>
+      <td>from 634 to 634_bat2</td>
+    <tr>
+      <td rowspan=3>Single Phase</td>  
+      <td rowspan=3>Load Disconnection</td>
+      <td>sect1</td>
+      <td>from 684 to tap</td>
+    </tr>
+    <tr>
+      <td>sw_bat1</td>
+      <td>from 634 to 634_bat1</td>
+    </tr>
+    <tr>
+      <td>sw_bat3</td>
+      <td>from house to house_bat</td>
+    </tr>
+  </tbody>
 </table>
 
 ## For COMTRADE files only
