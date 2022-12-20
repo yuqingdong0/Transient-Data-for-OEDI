@@ -1,6 +1,6 @@
 # IEEE 123 Test Model
 ## Contents
-The PMU data is converted from the Point On Wave (POW) data in [Transient-Data-for-OEDI/Simulation Data/IEEE 123/COMTADE file](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/COMTRADE%20file) in this repository.
+The PMU data is converted from the Point On Wave (POW) data in [Transient-Data-for-OEDI/Simulation Data/IEEE 123/COMTADE file](https://github.com/yuqingdong0/Transient-Data-for-OEDI/tree/main/Simulation%20Data/IEEE%20123/Faults/PMU%20Data/COMTRADE%20file) in this repository.
 The results are in **float32 formatted Comtrade** files (according to Annex H) and will contain magnitude and phase angle for each channel in the corresponding POW data file, as well as positive sequence phasors, frequency, and ROCOF estimates when a three phase signal is presented. The PMU used in the demo is the IEEE standard P-Class PMU with a sampling rate of 960Hz, a nominal frequency of 60Hz, and a report rate of 60Hz.<br>
 *_The CSV file format for PMU data is unavailable now._
 
