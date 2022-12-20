@@ -9,7 +9,7 @@ The data file label is named after the following rules:<br>
 * Single-phase (Phase A) Switching Operation: t2<br>
   * Breaker Name: sect1/sw_bat1/w_bat3 ➡️ b1/b2/b3 
 
-*_A table for breaker nodes. demonstration of line trip/load change/phase_<br>
+*_For detailed explanation, the switching types and the breaker locations are listed below._<br>
 <table style="width:100%">
   <thead>
     <tr>
@@ -42,6 +42,7 @@ The data file label is named after the following rules:<br>
     <tr>
       <td>sw_bat2</td>
       <td>from 634 to 634_bat2</td>
+    </tr>
     <tr>
       <td rowspan=3>Single Phase</td>  
       <td rowspan=3>Load Disconnection</td>
