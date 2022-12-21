@@ -99,23 +99,9 @@ There are 21 measured variables under each corresponding scenario in one data fi
     * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase); sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltage or frequency trip function activated.
     * suffix _W_ specifies the inverter's estimated frequency (rad/s); helpful to diagnose grid synchronization issues.
     
-### Three-phase line trip
-The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
+The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples for three-phase line trip. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
 
 <img src="https://user-images.githubusercontent.com/113486786/208350962-0aa314f6-1344-4563-929d-295a270ca72b.png" width="600" height="300">
 <img src="https://user-images.githubusercontent.com/113486786/208351018-e2518327-f4e1-4f7b-b156-766edf37bf91.png" width="600" height="300">
 <img src="https://user-images.githubusercontent.com/113486786/208351052-82531ab6-5863-4e98-8d24-8cc6b0568004.png" width="600" height="300">
 
- ### Three-phase load disconnection
-The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
-
-<img src="https://user-images.githubusercontent.com/113486786/208350962-0aa314f6-1344-4563-929d-295a270ca72b.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/208351018-e2518327-f4e1-4f7b-b156-766edf37bf91.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/208351052-82531ab6-5863-4e98-8d24-8cc6b0568004.png" width="600" height="300">
-
-### Single-phase load disconnection
-The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001V/I/W I-branch** in "ieee13_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Volt* (*V*) for *Voltage*, *Ampere* (*A*) for *Current* and *rad/s* for *Frequency*.<br>
-
-<img src="https://user-images.githubusercontent.com/113486786/208350962-0aa314f6-1344-4563-929d-295a270ca72b.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/208351018-e2518327-f4e1-4f7b-b156-766edf37bf91.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/208351052-82531ab6-5863-4e98-8d24-8cc6b0568004.png" width="600" height="300">
