@@ -16,7 +16,7 @@ The data file label is named after the following rules:<br>
             <th>Phase Type</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody align="center">
         <tr>
             <td>sw1</td>
             <td>from 150r to 149</td>
