@@ -8,6 +8,38 @@ The data file label is named after the following rules:<br>
 * Fault Type: Three-phase/Single-phase/Line-to-line phase fault ➡️ f1/f2/f3<br>
 
 *_The fault location defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%20123/Faults/IEEE123_PV.atpmap). In addition, ADJ1 is a fault location outside the feeder, approximately 250 feet away._<br>
+<table>
+    <thead>
+        <tr>
+            <th>Breaker Name</th>
+            <th>Connecting Bus</th>
+            <th>Phase Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>sw1</td>
+            <td>from 150r to 149</td>
+            <td rowspan=5>Three-phase/Single-phase</td>
+        </tr>
+        <tr>
+            <td>sw2</td>
+            <td>from 13 to 152</td>
+        </tr>
+        <tr>
+            <td>sw3</td>
+            <td>from 18 to 135</td>
+        </tr>
+        <tr>
+            <td>sw4</td>
+            <td>from 60 to 160</td>
+        </tr>
+        <tr>
+            <td>sw5</td>
+            <td>from 97 to 197</td>
+        </tr>
+    </tbody>
+</table>
 
 ## For COMTRADE files only
 **Python Comtrade** is a module for Python 3 designed to read *Common Format for Transient Data Exchange* (**COMTRADE**) files. Detailed information can be found [here](https://github.com/dparrini/python-comtrade). These consists of oscillography data recorded during power system outages, control systems tests, validation and tests of field equipment, protective relaying logs, etc. The COMTRADE format is defined by IEEE Standards.
