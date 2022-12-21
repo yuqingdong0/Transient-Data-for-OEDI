@@ -4,23 +4,23 @@ The data is simulated through IEEE 123 bus system with 14 PVs in ATP-EMTP softwa
 The data file label is named after the following rules:<br>
 * Loading Condition: 0.4/1.0 ➡️ l1/l2<br>
 * PV Capacity: 0.4/0.6/0.8/1.0 ➡️ c1/c2/c3/c4<br>
-* Fault Location: ADJ1/197/450/82 ➡️ b1/b2/b3/b4<br>
-* Fault Type: Three-phase/Single-phase/Line-to-line phase fault ➡️ f1/f2/f3<br>
+* Breaker Name: sw1/sw2/sw3/sw4/sw5 ➡️ b1/b2/b3/b4/b5
+* Switching Phase: three-phase/single-phase(phase A) ➡️ t1/t2<br>
 
-*_The fault location defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%20123/Faults/IEEE123_PV.atpmap). In addition, ADJ1 is a fault location outside the feeder, approximately 250 feet away._<br>
+*_For detailed explanation, the switching types and the breaker locations are listed below. The bus defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%2013/Switching%20Operations/IEEE13_PV.atpmap)_<br>
 <table style="width:100%">
     <thead>
         <tr>
-            <th style="width:20%">Breaker Name</th>
+            <th style="width:40%">Breaker Name</th>
             <th style="width:50%">Connecting Bus</th>
-            <th style="width:30%">Phase Type</th>
+            <th style="width:10%">Switching Type</th>
         </tr>
     </thead>
     <tbody align="center">
         <tr>
             <td>sw1</td>
             <td>from 150r to 149</td>
-            <td rowspan=5>Three-phase/Single-phase</td>
+            <td rowspan=5>Three-phase/Single-phase load disconnection</td>
         </tr>
         <tr>
             <td>sw2</td>
