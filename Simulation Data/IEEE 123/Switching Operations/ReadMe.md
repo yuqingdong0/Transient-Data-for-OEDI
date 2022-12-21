@@ -81,7 +81,7 @@ There are 54 measured variables under each corresponding scenario in one data fi
     * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
 
 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** in "ieee123_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Ampere* (*A*).<br>
+The switching operation is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **TACS PV001A/X/I I-branch** in "ieee123_pv_l1c1b1t1" are shown below as examples for three-phase load disconnection. The units in *Y*-axis are *Volt* (*V*) for *Voltage* and *Ampere* (*A*) for *Current*.<br>
 
 <img src="https://user-images.githubusercontent.com/113486786/208825883-080af374-9399-437a-8c03-d33e2f883553.png" width="600" height="300">
 <img src="https://user-images.githubusercontent.com/113486786/208825941-b2f3f8dc-8cef-4fd6-95a5-ec988bfb4ecb.png" width="600" height="300">
