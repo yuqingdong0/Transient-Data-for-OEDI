@@ -36,17 +36,10 @@ for i in range(rec.channels_count):
 ```
 
 ## Results
-There are 58 measured variables under each corresponding scenario in one data file.
-* The variables which begin with _SBUS_ or _FAULT_ are system branch currents or node voltages, shown as below:
-
-| Variable Name | Description | Variable Name | Description |
-| :---: | :---: | :---: | :---: |
-| SBUS A V-node | *Feederhead bus voltage in phase A* | SBUS C 25 C I-branch | *Feederhead current in phase C* |
-| SBUS B V-node | *Feederhead bus voltage in phase B* | FAULTA I-branch | *Fault current in phase A* | 
-| SBUS C V-node | *Feederhead bus voltage in phase C* | FAULTB I-branch | *Fault current in phase B* | 
-| SBUS A 25 A I-branch | *Feederhead current in phase A* | FAULTC I-branch | *Fault current in phase C* | 
-| SBUS B 25 B I-branch | *Feederhead current in phase B* | FALTBC 112 C I-branch | *Fault current in phase C of line to line fault* | 
-
+There are 58 measured variables under each corresponding scenario in one data file. 
+* The variables which begin with _SBUS_ are system node voltages or branch currents, following the rules:
+  * suffix _V-node_ specifies the feederhead bus voltage in phase _A_/_B_/_C_
+  * suffix _I-branch_ specifies the feederhead current in phase _A_/_B_/_C_
 * The varibales which begin with _TACS_ section delimiter are inverter outputs, following the rules:
     * _PV###_ specifies the inverter number, from 1..999
     * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase); helpful to visualize the operation of undervoltage trip or ridethrough.
