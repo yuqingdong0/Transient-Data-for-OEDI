@@ -20,7 +20,7 @@ The data file label is named after the following rules:<br>
         <tr>
             <td>sw1</td>
             <td>from 150r to 149</td>
-            <td rowspan=5>Three-phase/Single-phase load disconnection</td>
+            <td rowspan=5>Three-phase/Single-phase<br/> load disconnection</td>
         </tr>
         <tr>
             <td>sw2</td>
