@@ -9,7 +9,7 @@ The data file label is named after the following rules:<br>
 * Single-phase (Phase A) Switching Operation: t2<br>
   * Breaker Name: sect1/sw_bat1/sw_bat3 ➡️ b1/b2/b3 
 
-*_For detailed explanation, the switching types and the breaker locations are listed below. The bus defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE13_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%2013/Switching%20Operations/IEEE13_PV.atpmap)_<br>
+*_For detailed explanation, the switching types and the breaker locations are listed below. The bus defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE13_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%2013/Switching%20Operations/IEEE13_PV.atpmap)._<br>
 <table style="width:100%">
   <thead>
     <tr>
