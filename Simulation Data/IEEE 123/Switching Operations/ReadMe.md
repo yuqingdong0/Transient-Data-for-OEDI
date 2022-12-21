@@ -8,12 +8,12 @@ The data file label is named after the following rules:<br>
 * Fault Type: Three-phase/Single-phase/Line-to-line phase fault ➡️ f1/f2/f3<br>
 
 *_The fault location defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%20123/Faults/IEEE123_PV.atpmap). In addition, ADJ1 is a fault location outside the feeder, approximately 250 feet away._<br>
-<table>
+<table style="width:100%">
     <thead>
         <tr>
-            <th>Breaker Name</th>
-            <th>Connecting Bus</th>
-            <th>Phase Type</th>
+            <th style="width:20%">Breaker Name</th>
+            <th style="width:50%">Connecting Bus</th>
+            <th style="width:30%">Phase Type</th>
         </tr>
     </thead>
     <tbody align="center">
