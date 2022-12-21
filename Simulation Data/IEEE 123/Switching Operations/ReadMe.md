@@ -36,7 +36,7 @@ for i in range(rec.channels_count):
 ```
 
 ## Results
-There are 58 measured variables under each corresponding scenario in one data file. 
+There are 54 measured variables under each corresponding scenario in one data file. 
 * The variables which begin with _SBUS_ are system node voltages or branch currents, following the rules:
   * suffix _V-node_ specifies the feederhead bus voltage in phase _A_/_B_/_C_
   * suffix _I-branch_ specifies the feederhead current in phase _A_/_B_/_C_
