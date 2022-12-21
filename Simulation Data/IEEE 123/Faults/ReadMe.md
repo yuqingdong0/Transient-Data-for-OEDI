@@ -58,6 +58,6 @@ There are 58 measured variables under each corresponding scenario in one data fi
 
 The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** in "ieee123_pv_l1c1b1f1" are shown below as examples. The units in *Y*-axis are *Ampere* (*A*).<br>
 
-<div align=center><img src="https://user-images.githubusercontent.com/113486786/205838702-e1ed48c9-12df-47ed-a4f7-42fc1b681617.png" width="600" height="300">
-<div align=center><img src="https://user-images.githubusercontent.com/113486786/205838721-df475388-3c5f-4ee6-ad7c-bcd782be61c1.png" width="600" height="300">
-<div align=center><img src="https://user-images.githubusercontent.com/113486786/205838745-1361b8d2-f49a-441f-9c2f-3a56611481af.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/205838702-e1ed48c9-12df-47ed-a4f7-42fc1b681617.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/205838721-df475388-3c5f-4ee6-ad7c-bcd782be61c1.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/205838745-1361b8d2-f49a-441f-9c2f-3a56611481af.png" width="600" height="300">
