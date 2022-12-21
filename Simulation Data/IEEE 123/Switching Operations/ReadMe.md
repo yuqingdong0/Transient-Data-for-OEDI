@@ -7,7 +7,7 @@ The data file label is named after the following rules:<br>
 * Breaker Name: sw1/sw2/sw3/sw4/sw5 ➡️ b1/b2/b3/b4/b5
 * Switching Phase: three-phase/single-phase(phase A) ➡️ t1/t2<br>
 
-*_For detailed explanation, the switching types and the breaker locations are listed below. The bus defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%2013/Switching%20Operations/IEEE13_PV.atpmap)_<br>
+*_For detailed explanation, the switching types and the breaker locations are listed below. The bus defined in ATP model corresponds to the bus No. in XML file, which can be found in [IEEE123_PV.atpmap](https://github.com/yuqingdong0/Transient-Data-for-OEDI/blob/main/Simulation%20Data/IEEE%20123/Switching%20Operations/IEEE123_PV.atpmap)_.<br>
 <table style="width:100%">
     <thead>
         <tr>
@@ -56,7 +56,7 @@ The example below shows how to open CFG and DAT files to plot (using `pyplot`) a
 import matplotlib.pyplot as plt
 from comtrade import Comtrade
 
-file_name = "ieee123_pv_l1c1b1f1"
+file_name = "ieee123_pv_l1c1b1t1"
 rec = Comtrade()
 rec.load(f"{file_name}.cfg", f"{file_name}.dat")
 print("Trigger time = {}s".format(rec.trigger_time))
@@ -81,8 +81,8 @@ There are 54 measured variables under each corresponding scenario in one data fi
     * suffixes _X_, _Y_, _Z_ specify the inverter's instantaneous injected currents; needed to impute PMU data for this inverter.
 
 
-The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** in "ieee123_pv_l1c1b1f1" are shown below as examples. The units in *Y*-axis are *Ampere* (*A*).<br>
+The fault is applied at 0.3s and never cleared. The time window is from 0.0s to 0.6s. Results of **SBUS A/B/C 25 A/B/C I-branch** in "ieee123_pv_l1c1b1t1" are shown below as examples. The units in *Y*-axis are *Ampere* (*A*).<br>
 
-<img src="https://user-images.githubusercontent.com/113486786/205838702-e1ed48c9-12df-47ed-a4f7-42fc1b681617.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/205838721-df475388-3c5f-4ee6-ad7c-bcd782be61c1.png" width="600" height="300">
-<img src="https://user-images.githubusercontent.com/113486786/205838745-1361b8d2-f49a-441f-9c2f-3a56611481af.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/208825883-080af374-9399-437a-8c03-d33e2f883553.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/208825941-b2f3f8dc-8cef-4fd6-95a5-ec988bfb4ecb.png" width="600" height="300">
+<img src="https://user-images.githubusercontent.com/113486786/208826009-024f90ff-6ce2-4b9a-8ceb-75234c9ea3c2.png" width="600" height="300">
