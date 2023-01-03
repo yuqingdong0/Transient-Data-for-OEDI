@@ -92,7 +92,7 @@ There are 21 measured variables under each corresponding scenario in one data fi
 * The variables which begin with _SBUS_ are system node voltages or branch currents, following the rules:
   * suffix _V-node_ specifies the feederhead bus voltage in phase _A_/_B_/_C_
   * suffix _I-branch_ specifies the feederhead current in phase _A_/_B_/_C_
-* The varibales which begin with _TACS_ section delimiter are inverter outputs, following the rules:
+* The variables which begin with _TACS_ section delimiter are inverter outputs, following the rules:
     * _PV###_ specifies the PV number, from 1..999
     * _ST###_ specifies the battery storage number, from 1..999
     * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase); helpful to visualize the operation of undervoltage trip or ridethrough.
