@@ -47,7 +47,7 @@ There are 58 measured variables under each corresponding scenario in one data fi
 | SBUS A 25 A I-branch | *Feederhead current in phase A* | FAULTC I-branch | *Fault current in phase C* | 
 | SBUS B 25 B I-branch | *Feederhead current in phase B* | FALTBC 112 C I-branch | *Fault current in phase C of line to line fault* | 
 
-* The varibales which begin with _TACS_ section delimiter are inverter outputs, following the rules:
+* The variables which begin with _TACS_ section delimiter are inverter outputs, following the rules:
     * _PV###_ specifies the inverter number, from 1..999
     * suffix _V_ specifies the inverter's calculated RMS voltage (positive sequence in the case of three-phase); helpful to visualize the operation of undervoltage trip or ridethrough.
     * suffix _I_ specifies the inverter's RMS current injection (positive sequence in the case of three-phase); sufficient to visualize the status of this inverter. If the RMS current drops to zero, it means either a voltage or frequency trip function activated.
