@@ -5,9 +5,9 @@ In ATP, HIF is modeled using two paralleled DC batteries connected with diodes i
 are all in phase A.
 
 The data file label is named after the following rules:<br>
-* Loading Condition: 0.4/1.0 ➡️ l1/l2<br>
-* PV Capacity: 0.4/0.6/0.8/1.0 ➡️ c1/c2/c3/c4<br>
-* Fault Location: ADJ1/ADJ2/ADJ3/* ➡️ b1/b2/b3/...<br>
+* Loading Condition: 0.4/1.0 ➡️ L1/L2<br>
+* PV Capacity: 0.4/0.6/0.8/1.0 ➡️ C1/C2/C3/C4<br>
+* Fault Location: ADJ1/ADJ2/ADJ3/* ➡️ B1/B2/B3/...<br>
 * All the csv files end with **HIF**
 
 *_ADJ1, ADJ2, ADJ3 are fault locations outside the feeder, approximately 250 feet, 1 mile and 1 mile away.The other fault locations are selected with all the three-phase
